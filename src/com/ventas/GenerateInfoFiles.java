@@ -6,16 +6,13 @@ import java.util.*;
  */
 public class GenerateInfoFiles {
 
-    public static String[] NOMBRES = {"Juan", "Ana", "Luis", "Maria", "Pedro", "Laura", "Jorge", "Marta"};
-    public static final String[] APELLIDOS = {"Perez", "Gomez", "Rodriguez", "Lopez", "Diaz", "Martinez"};
-    public static final String[] PRODUCTOS = {"Laptop", "Telefono", "Tablet", "Monitor", "Teclado", "Raton"};
-
+    public static String[] NAMES = {"Juan", "Ana", "Luis", "Maria", "Pedro", "Laura", "Jorge", "Marta"};
+    public static final String[] LASTNAME = {"Perez", "Gomez", "Rodriguez", "Lopez", "Diaz", "Martinez"};
+    public static final String[] PRODUCTS = {"Laptop", "Telefono", "Tablet", "Monitor", "Teclado", "Raton"};
     // Folder where the files will be generated
     private static final String INFO_FOLDER = "informacion/";
-
     /**
      * Generates a sales file for a salesperson.
-     * 
      * @param randomSalesCount Number of random sales..
      * @param name Name of the seller.
      * @param id Seller ID.
@@ -26,7 +23,7 @@ public class GenerateInfoFiles {
             Random random = new Random();
             writer.write("ID_Producto;Cantidad\n"); // Header for sales file
             for (int i = 0; i < randomSalesCount; i++) {
-                int productId = random.nextInt(PRODUCTOS.length) + 1;
+                int productId = random.nextInt(PRODUCTS.length) + 1;
                 int cantidad = random.nextInt(10) + 1;
                 writer.write(productId + ";" + cantidad + "\n");
             }
@@ -46,7 +43,7 @@ public class GenerateInfoFiles {
             Random random = new Random();
             for (int i = 0; i < productsCount; i++) {
                 int productId = i + 1;
-                String productName = PRODUCTOS[random.nextInt(PRODUCTOS.length)];
+                String productName = PRODUCTS[random.nextInt(PRODUCTS.length)];
                 double price = 100 + (500 - 100) * random.nextDouble(); // Prices between 100 and 500
                 writer.write(productId + ";" + productName + ";" + String.format("%.2f", price) + "\n");
             }
@@ -64,14 +61,17 @@ public class GenerateInfoFiles {
     public static List<Long> createSalesManInfoFile(int salesmanCount) throws IOException {
         List<Long> ids = new ArrayList<>();
         try (FileWriter writer = new FileWriter(INFO_FOLDER + "vendedores.csv")) {
-            writer.write("Tipo de Documento;ID del Vendedor;Nombre;Apellido\n");  // Header CSV
+            writer.write("Tipo de Documento;ID del Vendedor;Nombre;Apellido;precio;cantidad;Total Ventas;\n");  // Header CSV
             Random random = new Random();
             for (int i = 0; i < salesmanCount; i++) {
-                String nombre = NOMBRES[random.nextInt(NOMBRES.length)];
-                String apellido = APELLIDOS[random.nextInt(APELLIDOS.length)];
+                String nombre = NAMES[random.nextInt(NAMES.length)];
+                String apellido = LASTNAME[random.nextInt(LASTNAME.length)];
                 long id = 1000000000L + random.nextInt(900000000);
+                int precio = 100 + random.nextInt(900);
+                int cantidad =  1 + random.nextInt(5);
+                int total = precio * cantidad;
                 ids.add(id);
-                writer.write("CC;" + id + ";" + nombre + ";" + apellido + "\n");
+                writer.write("CC;" + id + ";" + nombre + ";" + apellido + ";" + precio + ";" + cantidad + ";" + total +"\n");
             }
         }
         System.out.println("Archivo de vendedores generado.");
@@ -91,7 +91,7 @@ public class GenerateInfoFiles {
 
             // Generate sales files for each salesperson (with 5 sales per salesperson)
             for (int i = 0; i < ids.size(); i++) {
-                createSalesMenFile(5, NOMBRES[i % NOMBRES.length], ids.get(i));
+                createSalesMenFile(5, NAMES[i % NAMES.length], ids.get(i));
             }
         } catch (IOException e) {
             System.err.println("Error al generar archivos: " + e.getMessage());
