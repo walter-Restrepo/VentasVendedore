@@ -1,11 +1,11 @@
-Tipo de Documento;ID del Vendedor;Nombre;Apellido;precio;cantidad;Total Ventas
-CC;1341419229;Marta;Rodriguez;683;1;683
-CC;1554936966;Pedro;Martinez;503;5;2515
-CC;1492372333;Juan;Rodriguez;416;3;1248
-CC;1853692816;Maria;Gomez;767;2;1534
-CC;1493818770;Laura;Martinez;458;1;458
-CC;1863463839;Ana;Gomez;704;2;1408
-CC;1449569049;Juan;Diaz;617;1;617
-CC;1003062315;Pedro;Gomez;421;2;842
-CC;1804083235;Jorge;Rodriguez;246;2;492
-CC;1718189752;Marta;Perez;994;5;4970
+Tipo de Documento;ID del Vendedor;Nombre;Apellido;precio;cantidad;Total Ventas;
+CC;1789084487;Pedro;Diaz;570;1;570
+CC;1400359743;Maria;Diaz;325;4;1300
+CC;1083596671;Jorge;Rodriguez;744;3;2232
+CC;1656549473;Luis;Martinez;453;1;453
+CC;1700555134;Laura;Lopez;684;3;2052
+CC;1264423955;Jorge;Perez;536;1;536
+CC;1339077062;Ana;Rodriguez;759;4;3036
+CC;1750195173;Pedro;Rodriguez;653;3;1959
+CC;1466769434;Maria;Diaz;699;3;2097
+CC;1704525126;Pedro;Diaz;735;4;2940

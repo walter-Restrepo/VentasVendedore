@@ -1,0 +1,6 @@
+ID_Producto;Cantidad
+5;8
+5;4
+2;2
+1;3
+4;8

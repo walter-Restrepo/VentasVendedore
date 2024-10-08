@@ -1,0 +1,6 @@
+ID_Producto;Cantidad;Nombre del Producto
+2;6;Telefono
+5;10;Laptop
+1;8;Monitor
+5;10;Telefono
+5;6;Tablet

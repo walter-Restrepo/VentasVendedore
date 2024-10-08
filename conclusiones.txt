@@ -1,0 +1,21 @@
+1. Lo Aprendido Durante el Desarrollo del Proyecto.
+
+* Tipos de Datos: Se adquirió un conocimiento sólido sobre los diferentes tipos de datos en Java y sus aplicaciones prácticas, lo que permite seleccionar el tipo adecuado para cada situación.
+* Estructuras de Control: Se comprendió la importancia de las estructuras de control, esenciales para la lógica de los programas y para la toma de decisiones dentro del código.
+* Sintaxis y Buenas Prácticas: Se enfatizó la importancia de seguir buenas prácticas de programación, lo que mejora la legibilidad y el mantenimiento del código.
+* Uso de Métodos: Se aprendió a crear y utilizar métodos, lo que facilita la modularidad y la reutilización del código.
+* Arreglos y Estructuras de Datos: Se exploró el trabajo con arreglos de una y más dimensiones, lo que amplía las capacidades para manejar colecciones de datos.
+* Datos Compuestos: Se adquirió la habilidad de trabajar con datos compuestos, entendiendo sus métodos y estructuras, lo que es crucial para el desarrollo de aplicaciones más complejas.
+
+2. Aplicaciones en la Vida Profesional
+
+* Soluciones Prácticas: Las habilidades desarrolladas permiten implementar soluciones prácticas a problemas cotidianos mediante instrucciones sencillas, optimizando tiempo y recursos.
+* Modificaciones de Software Existente: Se puede modificar y ajustar programas existentes con facilidad, aportando mejoras basadas en el entendimiento del código, lo cual es valioso para la adaptación a nuevas necesidades empresariales.
+* Manejo de Grandes Conjuntos de Datos: Se adquirieron competencias para trabajar con conjuntos de datos complejos y masivos, lo que resulta esencial en un entorno profesional que demanda análisis casi en tiempo real.
+* Fundamentos de Programación: Los conocimientos básicos en programación y sus estructuras serán aplicables a otros lenguajes en el futuro, facilitando la transición a lenguajes más avanzados.
+
+3.	Dificultades Presentadas Durante el Desarrollo del Proyecto.
+
+* Sintaxis de Java: La sintaxis puede resultar complicada, especialmente para principiantes, lo que puede dificultar la obtención de resultados esperados.
+* Extensión del Código: La necesidad de escribir un mayor volumen de código para realizar tareas simples, como mostrar un texto en pantalla, puede ser desalentadora en comparación con otros lenguajes más concisos.
+* Declaración de Clases y Confusión de Datos: La gestión de clases y la declaración de datos pueden generar confusión, especialmente para quienes están iniciando en el aprendizaje de la programación.
